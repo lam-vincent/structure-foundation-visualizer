@@ -1,0 +1,59 @@
+.color-palette {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.palette-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.1s;
+  padding: 0;
+}
+
+.palette-swatch:hover {
+  transform: scale(1.1);
+}
+
+.palette-swatch.selected {
+  border-color: #fff;
+  transform: scale(1.15);
+}
+
+.palette-eraser {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background: #2e2e2e;
+  color: #ccc;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin-top: 4px;
+  padding: 0;
+  transition: transform 0.1s;
+}
+
+.palette-eraser:hover {
+  background: #3e3e3e;
+  transform: scale(1.1);
+}
+
+.palette-eraser.selected {
+  border-color: #fff;
+  background: #4e4e4e;
+  transform: scale(1.15);
+}
