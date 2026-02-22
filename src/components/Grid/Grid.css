@@ -1,0 +1,9 @@
+.grid-container {
+  display: inline-grid;
+  gap: 1px;
+  background-color: #555; /* gap background = cheap grid lines */
+  border: 1px solid #555;
+  cursor: crosshair;
+  user-select: none;
+  flex-shrink: 0;
+}
